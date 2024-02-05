@@ -9,7 +9,7 @@ body {
   font-family: 'Merriweather', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#31220b, #382e1b);
+  background: linear-gradient(#161007, #211a0e);
   color: #f3e7d4;
   min-height: 100vh;
 }
@@ -70,7 +70,7 @@ h1 {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
 }
 
@@ -263,5 +263,11 @@ h1 {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #main-title h1 {
+    display: none;
   }
 }
