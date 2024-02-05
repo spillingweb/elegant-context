@@ -27,4 +27,4 @@ jobs:
         server: www.spillingweb.com
         username: spillin1
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: public_html/projects/elegant-context/
+        local-dir: public_html/projects/elegant-context
