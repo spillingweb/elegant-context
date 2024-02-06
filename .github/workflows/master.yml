@@ -26,7 +26,8 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: www.elegant-context.spillingweb.com
+          server: spillingweb.com
           username: spillin1
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
+          server-dir: elegant-context.spillingweb.com/
