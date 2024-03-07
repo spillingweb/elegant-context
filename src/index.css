@@ -127,7 +127,7 @@ h1 {
 }
 
 #modal {
-  width: 30%;
+  width: 350px;
   background: #d3b17b;
   border: none;
   border-radius: 6px;
@@ -193,14 +193,14 @@ h1 {
   text-align: right;
 }
 
-#modal form {
+#modal-actions {
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
   align-items: center;
 }
 
-#modal form button {
+#modal-actions button {
   background: transparent;
   border: none;
   border-radius: 5px;
@@ -209,11 +209,11 @@ h1 {
   font-size: 1.1rem;
 }
 
-#modal form button:hover {
+#modal-actions button:hover {
   color: #453719;
 }
 
-#modal form button:last-of-type {
+#modal-actions button:last-of-type {
   background: #271e07;
   border: none;
   border-radius: 5px;
@@ -223,12 +223,8 @@ h1 {
   cursor: pointer;
 }
 
-#modal form button:last-of-type:hover {
+#modal-actions button:last-of-type:hover {
   background: #382e1b;
-}
-
-#checkout {
-  animation: fade-slide-in-from-right 0.3s ease-in-out;
 }
 
 #checkout label {
@@ -241,7 +237,6 @@ h1 {
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
-  margin-bottom: 1rem;
 }
 
 @keyframes fade-slide-in-from-top {
@@ -255,27 +250,7 @@ h1 {
   }
 }
 
-@keyframes fade-slide-in-from-right {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  #modal {
-    width: 50%;
-  }
-}
-
 @media only screen and (max-width: 600px) {
-  #modal {
-    width: 90%;
-  }
 
   #main-header {
     padding-bottom: 0;
