@@ -261,12 +261,16 @@ h1 {
   }
 
   #main-title h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
   }
 
   #products {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  #shop {
+    width: 80%;
   }
 
   #shop h2 {
